@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - name: Pull Docker image
-      run: sudo docker pull bokeefe96/cicd-pipeline:latest
+      run: sudo docker pull bokeefe96/b-mono-image:latest
     - name: Delete Old docker container
-      run: sudo docker rm -f cicd-pipeline-container || true
+      run: sudo docker rm -f cicd-docker-hub || true
     - name: Run Docker Container
-      run: sudo docker run -d -p 8080:8080 --name cicd-pipeline-container bokeefe96/cicd-pipeline
+      run: sudo docker run -d -p 8080:8080 --name cicd-docker-hub bokeefe96/b-mono-image

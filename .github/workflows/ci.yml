@@ -19,6 +19,6 @@ jobs:
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       
     - name: Build the Docker image
-      run: docker build -t bokeefe96/cicd-pipeline .
+      run: docker build -t b-mono-image .
     - name: Push to Dockerhub
-      run: docker push bokeefe96/cicd-pipeline:latest
+      run: docker push bokeefe96/cicd-docker-hub:latest
