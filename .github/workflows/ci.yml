@@ -19,6 +19,6 @@ jobs:
       run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
       
     - name: Build the Docker image
-      run: docker build -t b-mono-image .
+      run: docker build -t ${{secrets.DOCKER_USERNAME}}/b-mono-image:latest .
     - name: Push to Dockerhub
-      run: docker push bokeefe96/b-mono-image:latest
+      run: docker push ${{secrets.DOCKER_USERNAME}}/b-mono-image:latest
