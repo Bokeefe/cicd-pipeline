@@ -17,10 +17,6 @@ app.get("/api", (req, res) => {
   });
 });
 
-app.listen(80, () => {
-  console.log("Website server running on port 80");
-});
-
 app.listen(8080, () => {
   console.log("API server running on port 8080");
 });
