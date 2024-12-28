@@ -4,7 +4,7 @@ This is my first working CI/CD pipeline using AWS EC2 instances + GitHub actions
 
 
 useful commands
-# docker inspect \
-#   -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' bokeefe96/b-mono-image
+ `docker inspect \
+   -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' bokeefe96/b-mono-image`
 # 172.17.0.2
 
