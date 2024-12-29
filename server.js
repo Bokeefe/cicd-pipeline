@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 app.get("/api", (req, res) => {
   res.json({
     status: 200,
-    message: "howdy 🤠 world! This here is an updated via the pipeline.",
+    message: "howdy 🤠 world!",
   });
 });
 
